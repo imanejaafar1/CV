@@ -73,7 +73,8 @@
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">Elève Ingénieur</h5>
                 <p class="mt-20">Je suis étudiante en troisième année en cycle d'ingénieur en sciences et ingénierie topographie à l'IAV HASSAN II. Une personne créative, motivée et désireuse d'appliquer mes connaissances et mes compétences en topographie, SIG et en télédétection.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Télécharger Mon CV</button>
+                <a href="MON_CV.pdf" class="btn btn-outline-danger" download><i class="icon-down-circled2"></i>Télécharger Mon CV</a>
+
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Info personnelle</h3>
@@ -396,9 +397,18 @@ partir de   photographies aériennes de la zone définie.</P>
     <section class="section bg-custom-gray">
         <div class="container text-center">
             <h2 class="text-dark">Je suis disponible pour un entretien</h2>
-            <button class="btn bg-primary w-lg" >Recrutez-moi</button>
+            
+            <button id="recrutezMoiButton" class="btn bg-primary w-lg">Recrutez-moi</button>
+                <script>
+                document.getElementById('recrutezMoiButton').addEventListener('click', function() {
+                    alert('Votre demande de recrutement a été envoyée ! Nous vous contacterons bientôt.');
+                    // Vous pouvez ajouter ici du code pour gérer l'envoi de la demande de recrutement.
+                });
+                </script>
+                
         </div>
 
+    
         <ul class="social-icons pt-3">
             <li class="social-item text-center"> <!-- Ajoutez la classe "text-center" ici -->
                 <a class="social-link text-light" href="#">
